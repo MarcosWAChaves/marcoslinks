@@ -8,14 +8,14 @@ a {
   text-decoration: none;
 }
 
-html{
+body.blue{
   --bg-color: #edf2ff;
   --text-color: #00082f;
   --primary-color: #4263eb;
   --primary-color-dark: #364fc7;
 }
 
-body.dark-blue{
+body.blue_dark{
   --bg-color: #00082f;
   --text-color: #ffffff;
   --primary-color: #4263eb;
@@ -29,7 +29,7 @@ body.pink{
   --primary-color-dark: #a61e4d;
 }
 
-body.dark-pink{
+body.pink_dark{
   --bg-color: #1F000B;
   --text-color: #ffffff;
   --primary-color: #D6336c;
@@ -86,14 +86,22 @@ ul li a {
   color: white;
   text-transform: uppercase;
   font-size: 14px;
+  cursor: pointer;
 
   margin-bottom: 16px;
   border-radius: 6px;
-  transition: background 400ms.
+  transition: background 400ms;
 }
 
+a:hover,
 ul li a:hover {
   background: var(--primary-color-dark);
+}
+
+.items{
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: 0.5s;
 }
 
 footer {
